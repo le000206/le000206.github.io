@@ -1,0 +1,271 @@
+*,*:after,
+ *::before {
+     box-sizing: border-box;
+ }
+
+ html{
+    font-size: 16px;
+}
+
+/*MOBILE VIEW to 600px*/
+ body{
+    background-color: #f7f7ff;
+    color: #333131;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+ }
+
+.wrapper{
+    padding: 25px;
+}
+ #logo{
+     width: 114.73px;
+     height: auto;
+     margin:0;
+ }
+
+ h1{
+    font-size: 60px;
+    margin: 20px 0 0 0;
+ }
+
+ .wrapper p{
+    font-size: 24px;
+    margin: 0;
+ }
+
+ .bgimage{
+     width: 100%;
+     padding: 10px 0 10px 0;
+ }
+
+ .form h2{
+     font-size: 40px;
+     margin: 0;
+     padding: 0 0 15px 0;
+   
+ }
+
+ .form p{
+    font-size: 1rem;
+    padding: 0 0 15px 0;
+ }
+
+ .form form{
+    background-color: #ffffff;
+    border-radius: 26px;
+    box-shadow: 5px 10px 15px #bfbfc5;
+    padding: 20px;
+    
+
+ }
+
+fieldset{
+    border: 0; 
+    margin: 0 auto;
+    padding: 10px 0 10px 0;
+}
+
+.firstname, .lastname, .email, .phone{
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    border: 0;
+    background-color: #f4f4f5;
+    border-radius: 11px;
+    width:100%;
+    padding: 1rem;
+   
+}
+
+input[type=checkbox]{
+    transform: scale(1.5);
+}
+
+.form button{
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    background-color: #57eeab;
+    padding: 15px 35px;
+    border: 0;
+    border-radius: 11px;
+    font-size: 24px;
+}
+.status{
+    font-size: 14px;
+}
+.status p{
+    padding: 0;
+}
+.status a{
+    color: red;
+}
+
+footer{
+     background-color: #fffd8c;
+ }
+
+.calculate{
+    padding: 20px;
+}
+
+.calculate form{
+    display: grid;
+    grid-template-columns: 25% 73%;
+    grid-gap: 2%;
+}
+
+.calculate form:nth-child(1){
+    grid-column: 1;
+    grid-row: span 1;
+}
+
+
+
+.calculate button{
+    background-color: #ff8480;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+    border: 0;
+    border-radius: 11px;
+    font-size: 24px;
+    padding: 2px 0 2px 0;
+    grid-column: span 2;
+
+
+}
+
+input#hours, input#city{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    border: 0;
+    background-color: #f4f4f5;
+    border-radius: 11px;
+    padding: 10px;
+}
+
+
+
+
+.calculate form:nth-child(3){
+    grid-column: 1;
+    grid-row: 3;
+}
+
+
+
+.icon{
+    width: 60%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 0px 0 25px 0;
+}
+
+#facebook, #instagram, #twitter, #linkedin{
+    margin: 0 auto;
+}
+
+/*TABLET VIEW from 600px to 960px*/
+@media(min-width: 600px){
+    .wrapper{
+        width: 600px;
+        margin: 0;
+        padding: 25px 80px 80px 80px;
+    }
+  
+    h1{
+        font-size: 80px;
+    }
+
+    .wrapper p{
+        font-size: 24px;
+     }
+     
+    .bgimage{
+        width: 70%;
+        margin: auto;
+    }
+
+    .form form{
+        padding: 20px 50px 20px 50px;
+    }
+    .form h2{ 
+        font-size: 40px;
+    }
+   
+    .form p{
+       font-size: 30px;
+     
+    }
+    .firstname, .lastname, .email, .phone{
+        font-size: 18px;
+    }
+    
+    .form button{
+        font-size: 32px; 
+    }
+    .status p, .status a{
+        font-size: 17px;
+        padding: 10px 0 0 0;
+    }
+
+    .calculate{
+        padding: 30px 80px 30px 80px;
+    }
+
+    h3, {
+        padding: 0;
+        margin: 0;
+        font-size: 18px;
+    }
+    footer p{
+        padding: 10px 0 10px 0;
+        margin: 0;
+        font-size: 1rem;
+    }
+
+    .calculate form{
+        display: grid;
+        grid-template-columns: 20% 38% 38%;
+        grid-gap: 2%;
+    }
+
+    .calculate form button{
+        margin: 0;
+        grid-column: 3;
+        grid-row: 1;
+    }
+
+    .icon{
+        width: 40%;
+    }
+    
+/*DESKTOP VIEW greater than 960px*/
+@media (min-width:960px) {
+    .wrapper{
+        margin: 0;
+        width: 960px; 
+    }
+
+    .main{
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+    }
+
+    
+
+
+
+    
+    
+    
+
+        
+

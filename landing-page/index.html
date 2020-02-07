@@ -5,11 +5,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/stylereset.css">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="style/style.css">
     <title>Landing Page</title>
   
 </head>
 <body>
-    <p>TEST</p>
+    <div class="wrapper">
+        <div class="logo">
+            <img id="logo" src="img/logo.png" alt="logo image">
+        </div>
+        <div class="main">
+            <h1>Want to be your own boss?</h1>
+            <p>Start today and make up to $30/hr driving your own vehicle with Dash!</p>
+            <div class="bgimage">
+                <img src="img/scooter.svg" alt="background image">
+            </div>
+        
+
+            <div class="form">
+                <form>
+                    <h2> Apply Now</h2>
+                    <p>Enter your infor below.</p>
+                <fieldset>
+                    <input class="firstname" type="text" name="firstname" placeholder="First Name">
+                </fieldset>
+
+                <fieldset>
+                    <input class="lastname" type="text" name="lastname" placeholder="Last Name">
+                </fieldset>
+                <fieldset>
+                    <input class="email" type="text" name="email" placeholder="Email Address">
+                </fieldset>
+                <fieldset>
+                    <input class="phone" type="text" name="phone" placeholder="Phone number">
+                </fieldset>
+
+                <fieldset>
+                    <label class="checkbox">
+                    <input type="checkbox" name="checkbox" value="yes" checked>
+                    </label>
+                    <label class="agree">
+                    I agree to dash terms
+                    </label>
+                </fieldset>
+
+                <button type="submit">Drive with us</button>
+                <div class="status">
+                    <p>Already applied?
+                    <a href="#">Check your application status here</a>
+                    </p>           
+                </div>
+
+                </form>
+            </div>
+        </div>
+
+
+
+    </div>
 </body>
+<footer>
+    <div class="calculate">
+        <h3>See how much you can earn with Dash</h3>
+        <p>how many hours do you want to drive with us this week?</p>
+        <form>
+            
+            <input id="hours" type="text" name="hours" placeholder="Hours">
+            
+            <input id="city" type="text" name="city" placeholder="City">
+
+            <button type="submit">CALCULATE</button>
+        </form>
+    </div>
+
+    <div class="icon">
+        <img id="facebook" src="img/facebook.svg" alt="facebook icon">
+        <img id="instagram" src="img/instagram.svg" alt="instagram icon">
+        <img id="twitter" src="img/twitter.svg" alt="twitter icon">
+        <img id="linkedin" src="img/linkedin.svg" alt="linkedin icon">
+    </div>
+</footer>
 </html>
