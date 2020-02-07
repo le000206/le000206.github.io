@@ -1,3 +1,4 @@
+/*set up default for box-sizing*/
 *,*:after,
  *::before {
      box-sizing: border-box;
@@ -16,13 +17,17 @@
  }
 
 .wrapper{
-    padding: 25px;
+    padding: 0 40px 25px 40px;
 }
+
+/*logo size*/
+
  #logo{
      width: 114.73px;
      height: auto;
      margin:0;
  }
+
 
  h1{
     font-size: 60px;
@@ -34,16 +39,17 @@
     margin: 0;
  }
 
+/*background image */
  .bgimage{
      width: 100%;
-     padding: 10px 0 10px 0;
+     padding: 0 0 25px 0;
  }
 
+/*Apply form setting*/
  .form h2{
      font-size: 40px;
      margin: 0;
-     padding: 0 0 15px 0;
-   
+     padding: 0 0 15px 0; 
  }
 
  .form p{
@@ -56,8 +62,6 @@
     border-radius: 26px;
     box-shadow: 5px 10px 15px #bfbfc5;
     padding: 20px;
-    
-
  }
 
 fieldset{
@@ -75,9 +79,9 @@ fieldset{
     border-radius: 11px;
     width:100%;
     padding: 1rem;
-   
 }
 
+/*increase checkbox's size*/
 input[type=checkbox]{
     transform: scale(1.5);
 }
@@ -89,29 +93,41 @@ input[type=checkbox]{
     text-align: center;
     font-weight: bold;
     background-color: #57eeab;
-    padding: 15px 35px;
+    padding: 15px;
     border: 0;
     border-radius: 11px;
     font-size: 24px;
 }
+
+/*application status link*/
 .status{
     font-size: 14px;
+    text-align: center;
 }
+
 .status p{
     padding: 0;
 }
+
 .status a{
     color: red;
 }
 
+/*footer setting*/
 footer{
      background-color: #fffd8c;
  }
 
 .calculate{
-    padding: 20px;
+    padding: 0 40px 25px 40px;
 }
 
+.calculate h3{
+    padding: 25px 30px 0 0;
+    margin: 0;
+}
+
+/*grid for Caculate Form under Footer*/
 .calculate form{
     display: grid;
     grid-template-columns: 25% 73%;
@@ -122,7 +138,6 @@ footer{
     grid-column: 1;
     grid-row: span 1;
 }
-
 
 
 .calculate button{
@@ -137,8 +152,6 @@ footer{
     font-size: 24px;
     padding: 2px 0 2px 0;
     grid-column: span 2;
-
-
 }
 
 input#hours, input#city{
@@ -150,21 +163,18 @@ input#hours, input#city{
     padding: 10px;
 }
 
-
-
-
 .calculate form:nth-child(3){
     grid-column: 1;
     grid-row: 3;
 }
 
-
-
+/*social media icon*/
 .icon{
     width: 60%;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(4,1fr);
+    grid-gap: 20px;
     padding: 0px 0 25px 0;
 }
 
@@ -173,24 +183,24 @@ input#hours, input#city{
 }
 
 /*TABLET VIEW from 600px to 960px*/
+
 @media(min-width: 600px){
-    .wrapper{
-        width: 600px;
-        margin: 0;
-        padding: 25px 80px 80px 80px;
-    }
-  
+   .wrapper{
+    padding: 0 80px 50px 80px;
+   }
+
     h1{
         font-size: 80px;
     }
 
     .wrapper p{
-        font-size: 24px;
-     }
+        padding: 30px 0 0 0;
+    }
      
     .bgimage{
-        width: 70%;
+        width: 75%;
         margin: auto;
+        padding: 0;
     }
 
     .form form{
@@ -211,17 +221,23 @@ input#hours, input#city{
     .form button{
         font-size: 32px; 
     }
+
     .status p, .status a{
         font-size: 17px;
-        padding: 10px 0 0 0;
+    }
+
+    .status p{
+        padding: 20px 0 40px 0;
+        margin: auto;   
     }
 
     .calculate{
-        padding: 30px 80px 30px 80px;
+        padding: 25px 80px 25px 80px;
+        margin: auto;
     }
 
-    h3, {
-        padding: 0;
+    .calculate h3 {
+        padding: 25px 0 0 0;
         margin: 0;
         font-size: 18px;
     }
@@ -231,12 +247,12 @@ input#hours, input#city{
         font-size: 1rem;
     }
 
+    /*Grid for Calculate's Form in Footer*/
     .calculate form{
         display: grid;
         grid-template-columns: 20% 38% 38%;
         grid-gap: 2%;
     }
-
     .calculate form button{
         margin: 0;
         grid-column: 3;
@@ -246,18 +262,90 @@ input#hours, input#city{
     .icon{
         width: 40%;
     }
+}
     
 /*DESKTOP VIEW greater than 960px*/
+
 @media (min-width:960px) {
     .wrapper{
-        margin: 0;
-        width: 960px; 
+        padding: 0 140px 80px 140px;
+
     }
 
+    /*Grid for Desktop's view*/
     .main{
         display: grid;
         grid-template-columns: repeat(12, 1fr);
     }
+
+    .main .text{
+        grid-column: 1 / span 4;
+        grid-row: 1;
+    }
+
+
+    .bgimage{
+        width: 92%;
+        grid-column: 3 / span 7;
+        grid-row: 1;
+
+    }
+
+    .form{
+        grid-column: 9 / span 4;
+        grid-row: 1 / span 1;
+    }
+
+    .form h2{
+        padding: 20px 0 0 0;
+    }
+
+    .form p{
+        padding: 20px 0 20px 0;
+    }
+
+    .status p{
+        padding: 20px 0 40px 0;
+        margin: auto;   
+    }
+
+    .calculate{
+        padding: 30px 140px 30px 140px;
+    }
+
+    .calculate h3{
+        padding: 0;
+    }
+
+    /*Grid for Footer's elements*/
+    .footer{
+        padding: 0 140px 40px 140px;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(2,1fr);
+    }
+
+
+    .footer .calculate{
+        padding: 25px 0 0 0;
+        grid-column: span 1;
+        grid-row: span 2;
+    }
+
+    .footer .icon{
+        width: 70%;
+        grid-column: 4;
+        grid-row: span 2;
+        padding: 0;
+        margin: auto;
+        margin-right: 0;
+    }
+}
+
+
+
+
+
 
     
 
