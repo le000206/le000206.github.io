@@ -3,9 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>ARC Contact</title>
 </head>
 <body>
+    <a id="top"></a>
+    <header>
+        <!-- Navigation bar -->
+        <div class="topnav">
+            <img id="logo" src="img/logo.svg" alt="logo image">   
+                <div class="mainmenu">
+                    <nav>
+                        <ul>
+                            <li class="home"><a  href="index.html">Home</a></li>
+                            <li class="about"><a href="about.html">About</a></li>
+                            <li class="contact"><a class="active" href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>            
+        </div>
+    </header>  
+    <div class="wrapper">
+        <!-- Paragraph -->
+        <div class="p7">
+            <h1>We Want to Hear From You</h1>
+            <p>If you have an idea for an activity that you think you and your fellow students would love to participate in that we are not already offering, we want to know about it!</p>
+            <div class="contact">
+                <picture>
+                    <source srcset="img/contact-img-724_x_488.png 724w" media="(min-width:960px)">
+                    <source srcset="img/contact-img-452_x_305.png 452w" media="(min-width:600px)">
+                    <img src="img/contact-img.svg" alt="contact image">
+                </picture>
+            </div>
     
+        </div>
+        <!-- Contact form -->
+        <div class="contactform">
+        <form>
+            <p>Contact us.</p>
+            <fieldset>
+                <label for="fullname">Full Name</label>
+                <input class="fullname" type="text" name="fullname" placeholder="Full Name">
+            </fieldset>
+            <fieldset>
+                <label for="student">Student Number</label>
+                <input class="student" type="text" name="student" placeholder="Student Number">
+            </fieldset>
+            <fieldset>
+                <label for="email">Email</label>
+                <input class="email" type="text" name="email" placeholder="Email">
+            </fieldset>
+            <fieldset>
+                <label for="message">Message</label>
+                <textarea name="message" id="message" placeholder="Message"></textarea>
+            </fieldset>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+        <!-- Paragraph -->
+        <div class="p8">
+            <h1>Our Location.</h1>
+            <h3>Algonquin College Students' Association</h3>
+            <p>Monday to Friday – 8:30am to 6:00pm</p>
+            <p>1385 Woodroffe Avenue (E114)</p>
+            <p>Ottawa, Ontario</p>
+            <p>K2G 1V8</p>
+            <p>(613) 727-4723 x7711</p>
+        </div>
+        <!-- Map -->
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.9950058802738!2d-75.75876014899502!3d45.34891307899717!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College!5e0!3m2!1svi!2sca!4v1584069268162!5m2!1svi!2sca" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+
+    </div>
+    <!-- Footer -->
+    <footer>
+        <div class="footer">
+            <div class="follow">Follow us</div>
+            <div class="icon">
+                <img id="facebook" src="icon/facebook.svg" alt="facebook icon">
+                <img id="instagram" src="icon/instagram.svg" alt="instagram icon">
+                <img id="twitter" src="icon/twitter.svg" alt="twitter icon">
+                <img id="linkedin" src="icon/youtube.svg" alt="youtube icon">
+        </div>
+        <div class="topbutton">
+            <a href="#top"><img src="icon/arrow.svg " alt="back to top" width="22" height="22"></a>
+            <p>back to top</p>
+        </div>
+    </footer>
+
 </body>
 </html>

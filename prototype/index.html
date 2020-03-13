@@ -4,14 +4,126 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>ARC</title>
+    <title>ARC Home</title>
 </head>
 <body>
-    <div class="wrapper">
-        <div class="logo">
-            <img id="logo" src="img/logo.png" alt="logo image">
+    <a id="top"></a>
+    <header>
+        <!-- Navigation bar -->
+        <div class="topnav">
+            <img id="logo" src="img/logo.svg" alt="logo image">   
+                <div class="mainmenu">
+                    <nav>
+                        <ul>
+                            <li class="home"><a class="active" href="index.html">Home</a></li>
+                            <li class="about"><a href="about.html">About</a></li>
+                            <li class="contact"><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>            
         </div>
+    </header>  
+    <div class="wrapper">
+        <!-- Paragraph 1 -->
+        <div class="p1">
+            <h1>Discover Your ARC.</h1>
+            <p> With Algonquin College's newest facility, there's always something for everyone to discover and enjoy!</p>
+        </div>
+        <!-- Icons -->
+        <div class="p1img">
+            <div class="bowlingicon">
+                <img src="icon/bowling.svg" alt="Bowlingicon" width="38" height="38">
+                <p>Bowling</p>
+            </div>
+            <div class="climbingicon">
+                <img src="icon/climbing.svg" alt="Climbingicon" width="38" height="38">
+                <p>Rock Climbing</p>
+            </div>
+            <div class="fitnessicon">
+                <img src="icon/fitness.svg" alt="Fitnessicon" width="38" height="38">
+                <p>Fitness Center</p>
+            </div>
+            <div class="indooricon">
+                <img src="icon/indoor.svg" alt="Indooricon" width="38" height="38">
+                <p>Indoor Court</p>
+            </div>
+        </div>
+        <!-- Get Started Button -->
+        <div class="button1">
+            <p>Get Started</p>
+        </div>
+        <div class="discover">
+            <picture>
+                <source srcset="img/discover-950_x_753.png 950w" media="(min-width:960px)">
+                <source srcset="img/discover-350_x_277.png 350w" media="(min-width:600px)">
+                <img src="img/discover.svg" alt="discover">
+            </picture>
+        </div>
+        <div class="scrollbutton">
+            <p>scroll</p>
+            <div id="scroll"><img src="icon/arrow.svg " alt="back to top" width="26" height="26"></div>
+        </div>
+
+        <div class="school">
+            <picture>
+                <source srcset="img/school-813_x_540.png 813w" media="(min-width:960px)">
+                <source srcset="img/school-768_x_200.jpeg 768w" media="(min-width:600px)">
+                <img src="img/school.jpg" alt="School">
+            </picture>
+        </div>
+        <!-- Paragraph 2 -->
+        <div class="p2">
+            <h1>Discover.</h1>
+            <h3>Algonquin College</h3>
+            <p>of Applied Arts and Technology is a publicly funded English-language college located in Ottawa, Ontario, Canada. The college serves the National Capital Region and the outlying areas of Eastern Ontario, Western Quebec, and Upstate New York.</p>
+            <div class="button2">
+                <p>Learn More</p>
+            </div>
+        </div>
+        <!-- Paragraph SA President -->
+        <div class="president">
+            <div class="simon">
+                <img src="img/simon.jpg" alt="simon">
+                <h2>Dijanelle Simon</h2>
+                <h2>SA President</h2>
+            </div>
+
+            <p>"Only with increased capacity can we expand and create a more inclusive program that attracts a greater number of students to participate in physical and social activity. The Students' Association is committed to and focused on programming that results in our students taking person ownership for their health."</p>
+        </div>
+        <div class="entertainment">
+            <picture>
+                <source srcset="img/entertainment-813_x_337.jpg 813w" media="(min-width:960px)">
+                <source srcset="img/entertainment-768_x_200.jpg 768w" media="(min-width:600px)">
+                <img src="img/entertainment.jpg" alt="entertainment">
+            </picture>
+        </div>
+        <!-- Paragraph 3 -->
+        <div class="p3">
+            <h1>Discover.</h1>
+            <h3>The entertainment</h3>
+            <p>at Algonquin College is endless. We currently have the Algonquin Commons Theatre where we host a variety of events. Now with the coming of the ARC facility, not only will it be providing more space for the students to study, but it will also be bringing in more room for late-night entertainment.</p>
+            <div class="button2">
+                <p>Learn More</p>
+            </div>
+
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer">
+                <div class="follow">Follow us</div>
+                <div class="icon">
+                    <img id="facebook" src="icon/facebook.svg" alt="facebook icon">
+                    <img id="instagram" src="icon/instagram.svg" alt="instagram icon">
+                    <img id="twitter" src="icon/twitter.svg" alt="twitter icon">
+                    <img id="linkedin" src="icon/youtube.svg" alt="youtube icon">
+                </div>
+                <div class="topbutton">
+                    <a href="#top"><img src="icon/arrow.svg " alt="back to top" width="22" height="22"></a>
+                    <p>back to top</p>
+                </div>
+            </div>
+        </footer>
     </div>
-    
 </body>
 </html>
