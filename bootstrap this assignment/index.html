@@ -8,28 +8,138 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 <body>
-    <nav class="navbar navbar-expand-sm navbar-light bg-secondary fixed-top p-10">
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-info fixed-top p-2">
         <div class="container">
-            <a href="#" class="navbar-brand"><img src="/gilp0025.github.io/bootstrap-this/images/icon_bootstrip-this.svg" height="30px" alt="My Bootstrap Logo"></a>
+            <a href="#home" class="navbar-brand"><img src="img/icon.png" height="40px" alt="Logo"></a>
             
             <!-- hamburger menu -->
-            <button class="navbar-toggler" data-toggle="collapse" data-target="#myNav">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
         
-            <!-- the main nav needs to be placed inside a .navbar-nav container in order to work -->
-            <div id="myNav" class="collapse navbar-collapse">
-                <div class="navbar-nav ml-auto text-center"> <!-- ml-auto joga o menu para a direita-->
-                    <a href="#" class="nav-link active">Home</a>
-                    <a href="#history" class="nav-link">History</a>
-                    <a href="#features" class="nav-link">Features</a>
-                    <a href="#seealso" class="nav-link">See Also</a>
+            <div id="navbar" class="collapse navbar-collapse">
+                <div class="navbar-nav mx-auto text-uppercase "> 
+                    <a href="#home" class="nav-link active">About Bootstrap</a>
+                    <a href="#template" class="nav-link">Template</a>
+                    <a href="#utilities" class="nav-link">Utilities</a>
+                    <a href="#components" class="nav-link">Components</a>
                 </div>
             </div>
         </div>
     </nav>
 
+    <br />
+    <br />
+    <!-- landing page section -->
+    <div class="container mt-5 text-justify" id="home">
+        <img src="img/bootstrap-illustration.png " width="1200px" alt="Get started image" class="img-fluid d-block mx-auto"> 
+        <div class="text-center">
+            <h1 class="text-info text-uppercase mt-4 mb-2">Get to know Bootstrap</h1>
+        </div>
+        <p class="lead mb-2">
+            Build responsive, mobile-first projects on the web with the world’s most popular front-end component library.
+          </p>
+          <p class="lead mb-4">
+            Bootstrap is an open source toolkit for developing with HTML, CSS, and JS. Quickly prototype your ideas or build your entire app with our Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful plugins built on jQuery.
+          </p>
+    </div>
+    <br/>
+    <!-- jumbotron section -->
+    <div class="jumbotron">
+        <div class="container">
+            <h2 class="text-dark mb-2">Ready to start coding!</h2>
+            <p class="lead mb-4">Looking to quickly add Bootstrap to your project? Use BootstrapCDN, provided for free by the folks at StackPath. Using a package manager or need to download the source files?</p>
+            <button type="button" class="btn btn-outline-info btn-lg">Download Page</button>
+        </div>
+    </div>
+    <br/>
+
+    <!-- Template section -->
+
+    <div class="container" id="template">
+        <h2 class="text-secondary mb-4"> Starter Template</h2>
+        <img src="img/template.jpg"  alt="template image" class="img-fluid d-block mx-auto mb-3"> 
+        <!-- CSS template -->
+        <h4 class="text-secondary mb-2">CSS</h4>
+        <p class="text-justify">Copy-paste the stylesheet link into your head before all other stylesheets to load our CSS.</p>
+        <button type="button" class="btn btn-outline-info btn-md mb-3">Get Link</button>
+
+        <!-- JS template -->
+        <h4 class="text-secondary mb-2">JS</h4>
+            <p class="text-justify mb-1">Many of our components require the use of JavaScript to function. Specifically, they require jQuery, Popper.js, and our own JavaScript plugins. Place the following scripts near the end of your pages, right before the closing body tag, to enable them. jQuery must come first, then Popper.js, and then our JavaScript plugins</p>
+
+            <p class="text-justify">We use jQuery’s slim build, but the full version is also supported.</p>
+            <button type="button" class="btn btn-outline-info btn-md mb-5">Get Link</button>
+
+    </div>
+
+    <!-- Utilities & components section -->
+    <div class="containter">    
+        <div class="row p-3 mb-4">
+            <div class="card-body col-lg-6">
+                <h5 class="card-title text-warning text-uppercase">color</h5>
+                <p class="card-text"> Convey meaning through color with a handful of color utility classes. Includes support for styling links with hover states, too.</p>
+                <img src="img/color.png "  alt="color image" class="img-fluid d-block mx-auto">
+                <img src="img/colorcode.png "  alt="color code image" class="img-fluid d-block mx-auto mb-3">
+            </div>
+            <div class="card-body col-lg-6">
+                <h5 class="card-title text-warning text-uppercase">background color</h5>
+                <p class="card-text"> Easily set the background of an element to any contextual class</p>
+                <img src="img/bgcolor.png "  alt="background color image" class="img-fluid d-block mx-auto">
+                <img src="img/bgcolorcode.png "  alt="background color code image" class="img-fluid d-block mx-auto mb-3">
+            </div>
+            <br>
+            <div class=" card-body col-lg-6">
+                <h5 class="card-title text-success text-uppercase">button</h5>
+                <p class="card-text">Bootstrap includes several predefined button styles, each serving its own semantic purpose, with a few extras thrown in for more control.</p>
+                <img src="img/button.png "  alt="button image" class="img-fluid d-block mx-auto">
+                <img src="img/buttoncode.png "  alt="button code image" class="img-fluid d-block mx-auto">
+
+            </div>
+            <div class=" card-body col-lg-6">
+                <h5 class="card-title text-success text-uppercase">jumbotron</h5>
+                <p class="card-text">A lightweight, flexible component that can optionally extend the entire viewport to showcase key marketing messages on your site.</p>
+                <img src="img/jumbotron.png "  alt="jumbotron image" class="img-fluid d-block mx-auto">
+                <img src="img/jumbotroncode.png "  alt="jumbotron code image" class="img-fluid d-block mx-auto">
+            </div>
+
+
+        </div>
+    </div>
+    <footer class="bg-secondary text-center text-light p-2"> @Copyright</footer>
+
 
     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 </html>
