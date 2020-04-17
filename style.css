@@ -1,0 +1,488 @@
+* {
+    box-sizing: border-box;
+  }
+
+  body{
+      margin: 0;
+  }
+  /* HOMEPAGE SETTING */
+.wrapper{
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 100;
+    color: #2C3A61;
+    margin: 0;
+}
+
+.container{
+    text-align: center;
+}
+.logo img{
+    width: 145px; 
+    margin-top: 20px;
+}
+#page-nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+
+#page-nav ul li a{
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 2.5rem;
+}
+
+label{
+    display: block;
+    font-size: 2.2rem;
+    color: #D1959C;
+    width: 25px;
+    margin: auto;
+}
+#page-nav ul li{
+    border-top: 1px solid #D1959C;
+    padding: 0 15px;
+}
+
+#hamburger{
+    display: none;
+}
+#page-nav input:checked ~ ul{
+    display: inline-block;
+}
+
+
+.banner{
+    background-color: #7484A5;
+    text-align: center;
+    height: 170px;
+}
+
+.banner img {
+    width: 50%;
+    margin-top: 20px;
+
+}
+
+.introduction{
+    padding: 2rem;
+}
+.introduction h2{
+    color: #FD837C;
+    text-transform: uppercase;
+    font-weight: lighter;
+    margin-bottom: 1rem;
+    font-size: 20px;
+}
+
+.introduction .readmore, .button {
+    text-transform: uppercase;
+    padding: 5px 20px;
+    width: 45%;
+    border: 1px solid #2C3A61;
+    border-radius: 10px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: white;
+}
+.introduction .readmore a, .button a{
+    text-decoration: none;
+    color: black;
+}
+.illustration{
+    background-image: url("img/bg1.png");
+    background-size: cover;
+    height: 190px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+
+.responsive{
+    background-image: url("img/bg2.png");
+    background-size: cover;
+    height: 190px;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.photography{
+    background-image: url("img/bg3.png");
+    background-size: cover;
+    height: 190px;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+
+h1{
+    padding: 25px 0 10px 0;
+    margin: 0 auto;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* WORK PAGES SETTING */
+#work-nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;  
+    display: block;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#work-nav ul li {
+    display: block;
+    margin: auto;
+    background-color: white;
+}
+
+#work-nav ul li a{
+    display: block;
+    font-size: 20px;
+    padding: 1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #4566A0;
+    border-bottom: 1px solid #4566A0;
+}
+#work-nav ul li a.active{
+    background-color: #4566A0;
+    color: white;
+}
+.banner img{
+    width: 85%;
+}
+
+.project-logo, .project-branding{
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.project-logo img, .project-branding img{
+    width: 320px;
+}
+.project-logo h2, .project-branding h2{
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #91535D;
+    font-weight: lighter;
+}
+
+.project-logo p, .project-branding p{
+    text-align: left;
+}
+
+.webdesign{
+    padding: 2rem;
+}
+.webdesign1, .webdesign2, .photo1, .photo2 {
+    margin-bottom: 3rem;
+}
+
+.webdesign1 h2, .webdesign2 h2, .photo1 h2, .photo2 h2{
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #91535D;
+    font-weight: lighter;
+}
+.webdesign1 img, .webdesign2 img{
+    width: 100%;
+}
+.photo{
+    padding: 2rem;
+}
+.photo1 img, .photo2 img{
+    width: 100%;
+}
+/* ABOUT PAGE SETTING */
+.about{
+    padding: 2rem;
+    text-align: center;
+}
+
+.about img{
+    width: 180px;
+}
+.p1 h2, .p2 h2, .p3 h2{
+    text-align: left;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #FD4F51;
+    font-weight: lighter;
+}
+.p1 p, .p2 p, .p3 p{
+    text-align: left;
+}
+/* CONTACT PAGE SETTING */
+.contact{
+    padding: 2rem;
+}
+
+.contact h2{
+    color: #FD837C;
+    text-transform: uppercase;
+    font-weight: lighter;
+    margin-bottom: 1rem;
+    font-size: 20px;
+}
+.contact img{
+    width: 100%;
+}
+.message{
+    text-transform: uppercase;
+    padding: 3px 20px;
+    width: 70%;
+    border: 1px solid #2C3A61;
+    border-radius: 10px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: white;
+
+
+}
+footer{
+    text-align: center;
+    background-color: #D0DBE3;
+    height: 80px;
+    padding: 1rem 0;
+}
+
+#facebook, #instagram, #twitter{
+    margin: 10px 20px;
+}
+
+/* TABLET VERSION */
+@media (min-width: 600px){
+    #page-nav label, #hamburger{
+        display: none;
+    }
+
+    #page-nav {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    #page-nav ul{
+        display: block;
+    }
+
+    #page-nav ul li {
+        display: inline-block;
+        line-height: 70px;
+        margin: 0 1rem;
+        border: none;
+    }
+
+    #page-nav ul li a.active {
+        color:  #FD837C;
+        text-decoration: underline #7484A5;
+    }
+
+
+    .banner{
+        height: 200px; 
+    }
+
+    .banner img{
+        width: 250px;
+        margin-top: 50px;
+    }
+    .introduction{
+        padding: 2rem 4rem;
+    }
+    .introduction .readmore{  
+        width: 23%;
+        margin: 0;
+    }
+    .illustration{
+        background-image: url("img/bg1ipad.png");
+        height: 250px;
+        text-align: left;
+    }
+
+    .responsive{
+        background-image: url("img/bg2ipad.png");
+        height: 250px;
+        text-align: right;
+    }
+    .photography{
+        background-image: url("img/bg3ipad.png");
+        height: 250px;
+        text-align: left;
+    }
+    .illustration h1, .photography h1{
+        margin-left: 4rem;
+        font-size: 25px;
+        width: 200px;
+        line-height: 2.5rem;
+        font-size: 2rem;
+    }
+    .responsive h1{
+        margin-right: 4rem;
+        font-size: 25px;
+        width: 500px;
+        line-height: 3rem;
+        font-size: 2rem;
+    }
+
+    .illustration .button, .photography .button{
+        width: 20%;
+        margin: 0;
+        margin-left: 4rem;
+    }
+    .responsive .button{
+        width: 20%;
+        margin-right: 4rem;
+    }
+
+    .project-logo h2, .project-branding h2{
+        text-align: left;
+    }
+    .project-logo img{
+        width: 220px;
+    }
+
+    #project-logo{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1.5rem;
+    }
+
+    .branding1, .branding2{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        text-align: center;
+    }
+
+    #project-logo img{
+        width: 220px;
+  
+    }
+
+    .branding2 p{
+        grid-column: 1/span 1;
+        grid-row: 1;
+    }
+    .branding2 img{
+        grid-column: 2/ span 2;
+        width: 480px;       
+    }
+    .photo1 img, .photo2 img{
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    .about{
+        margin-bottom: 12rem;
+    }
+    .about img{
+        width: 250px;
+    }
+    .contact{
+        margin-bottom: 12rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 2rem;
+    }
+    .contact :nth-child(2){
+        grid-column: 2/span 2;
+    }
+
+    .message{
+        margin: 0;
+        width: 45%;
+    }
+}
+
+/* DESKTOP VERSION */
+@media(min-width: 960px){
+    .logo img{
+        width: 200px;
+    }
+    #page-nav ul li a{
+        margin: 0 3rem;
+        font-size: 1.2rem;
+    }
+    #page-nav ul li a:hover{
+        font-size: 150%;
+    } 
+
+    .illustration, .responsive, .photography{
+        height: 300px;
+    }
+    .introduction .readmore{
+        width: 15%;
+    }
+    .illustration .button, .responsive .button, .photography .button{
+        width: 14%;
+    }
+
+    #work-nav ul li {
+        display: inline-block;
+    }
+
+    #work-nav ul li a{
+        font-size: 20px;
+    }
+    #work-nav ul li a:hover{
+        font-weight: bolder;
+    } 
+    .project-logo, .project-branding{
+        padding: 2rem;
+    }
+
+    #project-logo img{
+        width: 100%;
+    }
+
+    .branding1 img, .branding2 img{
+        width: 100%;
+    }
+
+
+    .photo1, .photo2{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1rem;
+    }
+
+    .photo2 :nth-child(6){
+        grid-column: 1/span 1;
+        grid-row: 2;
+    }
+    .about{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 2rem;
+    }
+
+    .about .p1{
+        grid-column: 2/span 2;
+        grid-row: 1;
+        text-align: center;
+    }
+    .about .p2{
+        grid-column: 1/span 2;
+        grid-row: 2;
+    }
+    .about .p3{
+        grid-column: 2/span 2;
+        grid-row: 3;
+    }
+
+}
+
+
+
+
+
+
+
