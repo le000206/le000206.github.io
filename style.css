@@ -168,7 +168,7 @@ h1{
 }
 
 .project-logo img, .project-branding img{
-    width: 320px;
+    width: 100%;
 }
 .project-logo h2, .project-branding h2{
     font-size: 20px;
